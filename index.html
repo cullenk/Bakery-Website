@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validation</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <img src="img/cupcake.png">
+        <li>Home</li>
+        <li>About</li>
+        <li>Recipes</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+        <h3>Sign up for a free account!</h3>
+        <h5>Please enter a username</h5>
+      <form>
+        <div class="name-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" required>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="email-field inactive">
+             <i class="fas fa-at"></i>
+            <input type="email" placeholder="Email" required>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="password-field inactive">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="finish-field inactive">
+            <p>Thank you </p>
+            <i class="fas fa-check-circle"></i>
+        </div>
+      </form>
+     </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
