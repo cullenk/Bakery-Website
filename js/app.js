@@ -1,3 +1,14 @@
+//Navbar Toggle
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('display');
+});
+
+//Form Validation
+
 const infoText = document.querySelector('.container');
 const textUpdate = document.querySelector('h5');
 const header = document.querySelector('h3');
@@ -12,7 +23,7 @@ function formAnimate() {
 
       //Check for Validation
       if (input.type === 'text' && validateUser(input)) {
-          console.log('Success')
+          console.log('Success');
           nextSlide(parent, nextForm);
       } else if (input.type === 'email' && validateEmail(input)) {
           nextSlide(parent, nextForm);
@@ -24,7 +35,7 @@ function formAnimate() {
         // remove animation
       parent.addEventListener('animationend', () => {
         parent.style.animation = '';
-      })
+      });
     });
   });
 }
@@ -76,6 +87,6 @@ function statusColor(color) {
     textUpdate.style.color = color;
     window.setTimeout(function() {
     textUpdate.style.color = 'rgba(181, 86, 255, 0.7)';
-    },1200)
+  },1200);
 }
 formAnimate();

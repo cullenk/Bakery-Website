@@ -18,7 +18,7 @@ body {
 img {
   height:45px;
   width: 45px;
-  padding: 1px;
+  padding: 3px;
   position: relative;
 }
 
@@ -31,29 +31,91 @@ img:hover {
   100% {transform: rotate(360deg)}
 }
 
-nav {
+.navbar {
+  position: relative;
+  background-color: #333;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
   width: 100%;
-  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+   }
+
+.toggle-button {
+  display: flex;
+}
+
+.navbar-links {
+  display: none;
+  width: 100%;
+}
+
+.navbar-links ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.navbar-links ul li {
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.navbar-links ul li a {
+  padding: .5rem 1rem;
+}
+
+.navbar-links.display {
   display: flex;
-  justify-content: space-around;
+ }
 }
 
-
-ul li {
-  display: inline;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
 input {
   font-size: 1.3em;
