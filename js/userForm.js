@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 //Navbar Toggle
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -43,9 +45,11 @@ function formAnimate() {
 function validateUser(user) {
   const validation = /^[a-z]{5,}$/;
     if (validation.test(user.value)) {
+      infoText.style.marginTop = '250px';
       textUpdate.innerText = 'Please enter your email address';
       return true;
     } else {
+      infoText.style.marginTop = '190px';
       textUpdate.innerText = 'Your username should be at least 5 characters long, use only lowercase letters and no numbers.';
       statusColor('rgb(189,87,87)');
     }
@@ -65,7 +69,7 @@ function validateEmail(email) {
 function validatePass(password) {
     const validation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
     if (validation.test(password.value)) {
-      document.body.style.backgroundColor = 'rgb(53, 170, 112)';
+      // document.body.style.backgroundColor = 'rgb(53, 170, 112)';
       infoText.style.marginTop = '250px';
       header.style.opacity = '0';
       textUpdate.innerText = 'Your account has been created!';
