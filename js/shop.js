@@ -7,6 +7,7 @@ if (document.readyState == 'loading') {
   ready();
 }
 
+//Set up a clear page upon load by wrapping the basic functions in the ready() one.
 function ready () {
   const removeCartItemButtons = document.getElementsByClassName("btn-danger");
   for (let i = 0; i < removeCartItemButtons.length; i++) {
@@ -81,7 +82,7 @@ function addItemToCart(title, price, imageSrc) {
   <div class="cart-quantity cart-column">
       <input class="cart-quantity-input" type="number" value="1">
       <button class="btn btn-danger" type="button">REMOVE</button>
-  </div>`
+  </div>`;
   cartRow.innerHTML = cartRowContents;
   cartItems.append(cartRow);
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
