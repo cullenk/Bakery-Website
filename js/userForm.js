@@ -49,7 +49,7 @@ function validateUser(user) {
       textUpdate.innerText = 'Please enter your email address';
       return true;
     } else {
-      infoText.style.marginTop = '190px';
+      // infoText.style.marginTop = '190px';
       textUpdate.innerText = 'Your username should be at least 5 characters long, use only lowercase letters and no numbers.';
       statusColor('rgb(189,87,87)');
     }
@@ -90,7 +90,7 @@ function nextSlide(parent, nextForm) {
 function statusColor(color) {
     textUpdate.style.color = color;
     window.setTimeout(function() {
-    textUpdate.style.color = 'rgba(181, 86, 255, 0.7)';
+    textUpdate.style.color = 'red';
   },1200);
 }
 formAnimate();

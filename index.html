@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bakery Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+    <title>Local Bakery</title>
     <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-
   <body>
 
     <nav class="navbar">
       <div class="logo-img">
-        <img src="img/cupcake.png">
+        <a href="index.html"><img src="img/cupcake.png"></a>
       </div>
       <a href="#" class="toggle-button">
           <span class="bar"></span>
@@ -22,40 +22,63 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="index.html">Sign Up</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
         </ul>
      </div>
     </nav>
 
-    <div class="container">
-        <h3>Sign up for a free account!</h3>
-        <h5>Please enter a username</h5>
-      <form>
-        <div class="name-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" required>
-            <i class="fas fa-arrow-down"></i>
-        </div>
-        <div class="email-field inactive">
-             <i class="fas fa-at"></i>
-            <input type="email" placeholder="Email" required>
-            <i class="fas fa-arrow-down"></i>
-        </div>
-        <div class="password-field inactive">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required>
-            <i class="fas fa-arrow-down"></i>
-        </div>
-        <div class="finish-field inactive">
-            <p>Thank you </p>
-            <i class="fas fa-check-circle"></i>
-        </div>
-      </form>
-     </div>
-    <script src="js/userForm.js"></script>
-    <script src="js/shop.js"></script>
+    <div class="home-page-container">
+      <div class="home-header">
+          <h1>
+            <i class="fas fa-paw"></i>COOPER BAKERY<i class="fas fa-paw"></i>
+          </h1>
+      </div>
+    </div>
+
+
+<footer class="footer">
+  <div class="footer-element footer-address">
+    <div class="footer-info">
+      <h3>ADDRESS</h3>
+      <span>123 Main Street.</span>
+      <span>New York, NY 10009</span>
+    </div>
+  </div>
+  <div class="footer-element footer-hours">
+    <div class="footer-info">
+      <h3>HOURS</h3>
+      <span>Mon - Fri: 6am - 7pm</span>
+      <span>Sat - Sun: 8am - 8pm</span>
+    </div>
+  </div>
+  <div class="footer-element footer-contact">
+    <div class="footer-info">
+      <h3>CONTACT</h3>
+      <span>123-456-7890</span>
+      <span>info@cooperbakery.com</span>
+    </div>
+  </div>
+    <div class="footer-follow">
+      <div class="follow-info">
+        <h3>FOLLOW</h3>
+        <img src="img/facebook-icon.png" alt="Facebook Logo">
+        <img src="img/instagram-icon.png" alt="Instagram Logo">
+        <img src="img/twitter-icon.png" alt="Twitter Logo">
+      </div>
+    </div>
+    </footer>
+  <div class="copyright">
+    <span>&copy;Cooper Bakery 2020</span>
+  </div>
+
+
+
+
+
+
+    <script src="js/index.js"></script>
   </body>
 </html>

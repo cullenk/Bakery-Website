@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bakery Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title>Local Bakery</title>
     <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-
-  <body class="shop-bg">
+  <body>
 
     <nav class="navbar">
       <div class="logo-img">
-        <img src="img/cupcake.png">
+        <a href="index.html"><img src="img/cupcake.png"></a>
       </div>
       <a href="#" class="toggle-button">
           <span class="bar"></span>
@@ -23,85 +22,122 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="index.html">Sign Up</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
         </ul>
      </div>
     </nav>
 
-    <section>
-      <h1>Bring the Sweetness Home!</h1>
-      <div class="shop-items">
-        <div class="shop-item">
-          <span class="shop-item-name">Ice Cream</span>
-          <img class="shop-item-image" src="img/ice-cream.jpg">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$5.00</span>
-            <button class="btn add-to-cart-button" type="button">Add to Cart</button>
+    <div class="container">
+        <section>
+          <h1 class="shopping-title">Bring the Sweetness Home!</h1>
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-name">Ice Cream</span>
+              <img class="shop-item-image" src="img/ice-cream.jpg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">$5.00</span>
+                <button class="add-to-cart-button" type="button">Add to Cart</button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-name">Cream Puff</span>
+              <img class="shop-item-image" src="img/cream-puff.jpg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">$6.00</span>
+                <button class="add-to-cart-button" type="button">Add to Cart</button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-name">Cake</span>
+              <img class="shop-item-image" src="img/cake.jpg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">$20.00</span>
+                <button class="add-to-cart-button" type="button">Add to Cart</button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-name">Cookie</span>
+              <img class="shop-item-image" src="img/cookies.jpg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">$2.00</span>
+                <button class="add-to-cart-button" type="button">Add to Cart</button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-name">Cupcake</span>
+              <img class="shop-item-image" src="img/cupcakes.jpg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">$4.00</span>
+                <button class="add-to-cart-button" type="button">Add to Cart</button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-name">Muffin</span>
+              <img class="shop-item-image" src="img/muffins.jpg">
+              <div class="shop-item-details">
+                <span class="shop-item-price">$3.00</span>
+                <button class="add-to-cart-button" type="button">Add to Cart</button>
+              </div>
+            </div>
           </div>
+       </section>
+
+       <section>
+        <h2 class="cart-title">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div class="shop-item">
-          <span class="shop-item-name">Cream Puff</span>
-          <img class="shop-item-image" src="img/cream-puff.jpg">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$6.00</span>
-            <button class="btn add-to-cart-button" type="button">Add to Cart</button>
-          </div>
+        <div class="cart-items">
         </div>
-        <div class="shop-item">
-          <span class="shop-item-name">Cake</span>
-          <img class="shop-item-image" src="img/cake.jpg">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$20.00</span>
-            <button class="btn add-to-cart-button" type="button">Add to Cart</button>
-          </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0.00</span>
         </div>
-        <div class="shop-item">
-          <span class="shop-item-name">Cookie</span>
-          <img class="shop-item-image" src="img/cookies.jpg">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$2.00</span>
-            <button class="btn add-to-cart-button" type="button">Add to Cart</button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-name">Cupcake</span>
-          <img class="shop-item-image" src="img/cupcakes.jpg">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$4.00</span>
-            <button class="btn add-to-cart-button" type="button">Add to Cart</button>
-          </div>
-        </div>
-        <div class="shop-item">
-          <span class="shop-item-name">Muffin</span>
-          <img class="shop-item-image" src="img/muffins.jpg">
-          <div class="shop-item-details">
-            <span class="shop-item-price">$3.00</span>
-            <button class="btn add-to-cart-button" type="button">Add to Cart</button>
-          </div>
+        <button class="btn-purchase" type="button">PURCHASE</button>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-element footer-address">
+        <div class="footer-info">
+          <h3>ADDRESS</h3>
+          <span>123 Main Street.</span>
+          <span>New York, NY 10009</span>
         </div>
       </div>
-   </section>
+      <div class="footer-element footer-hours">
+        <div class="footer-info">
+          <h3>HOURS</h3>
+          <span>Mon - Fri: 6am - 7pm</span>
+          <span>Sat - Sun: 8am - 8pm</span>
+        </div>
+      </div>
+      <div class="footer-element footer-contact">
+        <div class="footer-info">
+          <h3>CONTACT</h3>
+          <span>123-456-7890</span>
+          <span>info@cooperbakery.com</span>
+        </div>
+      </div>
+        <div class="footer-follow">
+          <div class="follow-info">
+            <h3>FOLLOW</h3>
+            <img src="img/facebook-icon.png" alt="Facebook Logo">
+            <img src="img/instagram-icon.png" alt="Instagram Logo">
+            <img src="img/twitter-icon.png" alt="Twitter Logo">
+          </div>
+        </div>
+        </footer>
+      <div class="copyright">
+        <span>&copy;Cooper Bakery 2020</span>
+      </div>
 
-   <section>
-    <h2>CART</h2>
-    <div class="cart-row">
-        <span class="cart-item cart-header cart-column">ITEM</span>
-        <span class="cart-price cart-header cart-column">PRICE</span>
-        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-    </div>
-    <div class="cart-items">
-    </div>
-    <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$0.00</span>
-    </div>
-    <button class="btn btn-purchase" type="button">PURCHASE</button>
-  </section>
-
-    <script src="js/userForm.js"></script>
-    <script src="js/shop.js"></script>
-  </body>
-</html>
+        <script src="js/shop.js"></script>
+        <script src="js/index.js"></script>
+      </body>
+    </html>
