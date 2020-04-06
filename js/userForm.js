@@ -9,10 +9,6 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('display');
 });
 
-//Form Prompt
-
-
-
 //Form Validation
 const textUpdate = document.querySelector('.form-text');
 const signUpInfo = document.querySelector('.sign-up-info-container');
